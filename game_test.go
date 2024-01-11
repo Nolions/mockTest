@@ -29,6 +29,8 @@ func TestGetNumberByBaseball(t *testing.T) {
 
 func TestGetNumberByFootball(t *testing.T) {
 	mockCtl := gomock.NewController(t)
+	defer mockCtl.Finish()
+
 	mockGame := game.NewMockGame(mockCtl)
 	mockGame.EXPECT().GetType().Return("football")
 
