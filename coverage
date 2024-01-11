@@ -1,0 +1,6 @@
+mode: set
+github.com/Nolions/mockTest/game.go:7.38,9.2 1 1
+github.com/Nolions/mockTest/game.go:11.33,13.21 2 1
+github.com/Nolions/mockTest/game.go:14.18,15.8 1 1
+github.com/Nolions/mockTest/game.go:16.18,17.9 1 1
+github.com/Nolions/mockTest/game.go:20.2,20.10 1 1
