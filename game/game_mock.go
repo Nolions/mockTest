@@ -33,6 +33,18 @@ func (m *MockGame) EXPECT() *MockGameMockRecorder {
 	return m.recorder
 }
 
+// End mocks base method.
+func (m *MockGame) End() {
+	m.ctrl.T.Helper()
+	m.ctrl.Call(m, "End")
+}
+
+// End indicates an expected call of End.
+func (mr *MockGameMockRecorder) End() *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "End", reflect.TypeOf((*MockGame)(nil).End))
+}
+
 // GetType mocks base method.
 func (m *MockGame) GetType() string {
 	m.ctrl.T.Helper()
@@ -45,4 +57,16 @@ func (m *MockGame) GetType() string {
 func (mr *MockGameMockRecorder) GetType() *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetType", reflect.TypeOf((*MockGame)(nil).GetType))
+}
+
+// Start mocks base method.
+func (m *MockGame) Start() {
+	m.ctrl.T.Helper()
+	m.ctrl.Call(m, "Start")
+}
+
+// Start indicates an expected call of Start.
+func (mr *MockGameMockRecorder) Start() *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Start", reflect.TypeOf((*MockGame)(nil).Start))
 }
